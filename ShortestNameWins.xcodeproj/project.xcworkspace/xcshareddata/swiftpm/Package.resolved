@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "playingcards",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lcs-rgordon/PlayingCards",
+      "state" : {
+        "branch" : "main",
+        "revision" : "67c0cfba96ee6baa8d4d1242d9fc70afc80f9f5f"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -11,6 +11,7 @@
 		81D6DD1A29228977008CDF80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D6DD1929228977008CDF80 /* ContentView.swift */; };
 		81D6DD1C29228979008CDF80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D6DD1B29228979008CDF80 /* Assets.xcassets */; };
 		81D6DD1F29228979008CDF80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D6DD1E29228979008CDF80 /* Preview Assets.xcassets */; };
+		81FA95D8292289C700337806 /* PlayingCards in Frameworks */ = {isa = PBXBuildFile; productRef = 81FA95D7292289C700337806 /* PlayingCards */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81FA95D8292289C700337806 /* PlayingCards in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = ShortestNameWins;
+			packageProductDependencies = (
+				81FA95D7292289C700337806 /* PlayingCards */,
+			);
 			productName = ShortestNameWins;
 			productReference = 81D6DD1429228977008CDF80 /* ShortestNameWins.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 81D6DD0B29228977008CDF80;
+			packageReferences = (
+				81FA95D6292289C700337806 /* XCRemoteSwiftPackageReference "PlayingCards" */,
+			);
 			productRefGroup = 81D6DD1529228977008CDF80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81FA95D6292289C700337806 /* XCRemoteSwiftPackageReference "PlayingCards" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lcs-rgordon/PlayingCards";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81FA95D7292289C700337806 /* PlayingCards */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81FA95D6292289C700337806 /* XCRemoteSwiftPackageReference "PlayingCards" */;
+			productName = PlayingCards;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 81D6DD0C29228977008CDF80 /* Project object */;
 }
